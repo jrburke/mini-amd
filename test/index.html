@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../mini-amd.js"></script>
+<script src="c.js" data-moduleid="c"></script>
+<script src="b.js" data-moduleid="b"></script>
+<script src="a.js" data-moduleid="a"></script>
+<script>
+var a = require('a');
+
+console.log(a);
+
+console.log(a.name);
+console.log(a.b.name);
+console.log(a.b.c.name);
+
+</script>
+</head>
+<body>
+<h1>Test</h1>
+<p>See the web console.</p>
+</body>
+</html>
